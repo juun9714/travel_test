@@ -6,11 +6,11 @@
 
 @media (max-width : 541px){
     #qna_content{
-        width:90%;
+        width:80%;
     }
 
     #result_content{
-        width:90%;
+        width:80%;
     }
 }
 #ques{
@@ -52,7 +52,7 @@
 
 #result_content{
     text-align: center;
-    margin: auto;
+    margin: 100px auto;
     width:540px;
 }
 
