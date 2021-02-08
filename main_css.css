@@ -1,0 +1,41 @@
+#content{
+    text-align: center;
+    margin: auto;
+    width:540px;
+}
+
+#box{
+    background-color:lightgray;
+    padding:20px;
+    border-radius: 30px;
+}
+
+@media (max-width : 541px){
+    /*
+    가로가 540px 보다 클 때  
+    */
+    #content{
+        width:90%;
+    }
+
+}
+
+#start{
+    margin-top: 20px;
+    border-radius: 30px;
+    width:80%;
+    height: 40px;
+    font-size: larger;
+}
+
+#copy_link{
+    margin-top: 20px;
+    border-radius: 30px;
+    width:80%;
+    height: 40px;
+    font-size: larger;
+}
+
+h5{
+    font-size:larger;
+}
