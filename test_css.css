@@ -1,18 +1,19 @@
-#qna_content{
+#content{
     text-align: center;
     margin: 100px auto;
     width:540px;
 }
 
 @media (max-width : 541px){
-    #qna_content{
+    #content{
         width:80%;
-    }
-
-    #result_content{
-        width:80%;
+        text-align: center;
+        margin: 100px auto;
     }
 }
+
+
+
 #ques{
     font-size: medium;
     padding-bottom: 20px;
@@ -50,7 +51,7 @@
 
 
 
-#result_content{
+#content{
     text-align: center;
     margin: 100px auto;
     width:540px;
