@@ -343,7 +343,7 @@ function getMBTI(){
 function goToResult(){
     getMBTI()
     qna_content.style.display='none'
-    result_content.style.display='block'
+    result_content.style.visibility='visible'
 }
 
 function AddI(){
