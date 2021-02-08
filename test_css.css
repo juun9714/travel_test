@@ -5,7 +5,11 @@
 }
 
 @media (max-width : 541px){
-    #content{
+    #qna_content{
+        width:90%;
+    }
+
+    #result_content{
         width:90%;
     }
 }
