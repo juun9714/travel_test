@@ -31,22 +31,20 @@ html{
 }
 
 #start{
-    font-family: "Arial";
     margin-top: 20px;
     border-radius: 30px;
     width:80%;
     height: 40px;
-    font-size: large;
+    font-size: small;
     font-weight: bold;
 }
 
 #copy_link{
-    font-family: "Times New Roman";
     margin-top: 20px;
     border-radius: 30px;
     width:80%;
     height: 40px;
-    font-size: large;
+    font-size:small;
     font-weight:600;
 }
 
