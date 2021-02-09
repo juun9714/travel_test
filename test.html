@@ -7,12 +7,14 @@
     <link rel= "stylesheet" type="text/css" href="test_css.css">
     <script src="test_js.js"></script>
     <script>
-        function copyClick(){
-            var link=document.getElementById('url');
-            link.select();
-            link.setSelectionRange(0, 99999);
+        function copy(){
+            var obj=document.getElementById("link");
+
+            obj.select();
+            obj.setSelectionRange(0,99999);
             document.execCommand("copy");
-            alert("링크가 복사되었어요 :)");
+            obj.setSelectionRange(0,0);
+            alert("링크가 복사되었어요 ! 얼른 공유하러 가요 :)")
         }
     </script>
     <style>
@@ -32,13 +34,13 @@
             <h5>성격 유형별 여행지 TEST 결과</h5>
             <h2 id="nick">닉네임</h2>
             <img id="character" src="./img/bear.jpg">
-            <div id="result_box">mus quis rem impedit provident, dicta ab optio eligendi quaerat, laudantium dolor omnis neque alias saepe nemo.</div>
-           
+            <div id="result_box">.</div>
+
+            <!-- buttons -->
             <button id="save_img" onclick='startClick()'>SAVE IMAGE</button>
-            <button id="copy_link" onclick='copyClick()'>링크 복사하기</button>
             <button id="home" onclick='reTry()'>RETRY</button>
-            <input type="text" value="https://juun9714.github.io/travel_test/main.html" id="url" style="visibility: hidden;">
-    
+            <button id="copy_link" onclick="copy()">SHARE</button>
+            <textarea id="link" style="visibility: hidden;">https://juun9714.github.io/travel_test/main.html</textarea>
         </div>
     </div>
     
