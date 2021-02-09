@@ -1,3 +1,11 @@
+
+@font-face{
+    src:url("./font/MaruBuri-Regular.ttf");
+    font-family:"maru";
+}
+html{
+    font-family: "maru";
+}
 #content{
     text-align: center;
     margin: 100px auto;
@@ -108,4 +116,8 @@ h5{
 #character{
     width: 50%;
     padding-bottom: 20px;
+}
+
+button{
+    font-family: "maru";
 }

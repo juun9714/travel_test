@@ -1,7 +1,17 @@
+@font-face{
+    src:url("./font/MaruBuri-Regular.ttf");
+    font-family:"maru";
+}
+
+html{
+    font-family:"maru";
+}
+
 #content{
     text-align: center;
     margin: auto;
     width:540px;
+    font-family: 'Noto Serif KR', serif;
 }
 
 #box{
@@ -38,4 +48,8 @@
 
 h5{
     font-size:larger;
+}
+
+button{
+    font-family:"maru";
 }
