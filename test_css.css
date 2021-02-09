@@ -69,7 +69,7 @@ html{
     padding:20px;
     border-radius: 30px;
     line-height: 200%;
-    font-size:smaller;
+    font-size:11px;
 }
 
 @media (max-width : 541px){
@@ -131,6 +131,6 @@ h5{
 
 .chars{
     margin-top: 12px;
-    font-size:smaller;
+    font-size:11px;
     line-height: 200%;
 }
