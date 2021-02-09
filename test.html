@@ -6,6 +6,15 @@
     <title>Test Page</title>
     <link rel= "stylesheet" type="text/css" href="test_css.css">
     <script src="test_js.js"></script>
+    <script>
+        function copyClick(){
+            var link=document.getElementById('url');
+
+            link.select();
+            document.execCommand("copy");
+            alert("링크가 복사되었어요 :)");
+        }
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Noto+Serif+KR&display=swap');
     </style>
@@ -26,8 +35,9 @@
             <div id="result_box">mus quis rem impedit provident, dicta ab optio eligendi quaerat, laudantium dolor omnis neque alias saepe nemo.</div>
            
             <button id="save_img" onclick='startClick()'>SAVE IMAGE</button>
-            <button id="copy_link" onclick=''>COPY LINK</button>
+            <button id="copy_link" onclick='copyClick()'>링크 복사하기</button>
             <button id="home" onclick='reTry()'>RETRY</button>
+            <input type="text" value="https://juun9714.github.io/travel_test/main.html" id="url" style="visibility: hidden;">
     
         </div>
     </div>

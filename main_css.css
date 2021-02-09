@@ -31,19 +31,23 @@ html{
 }
 
 #start{
+    font-family:'maru';
     margin-top: 20px;
     border-radius: 30px;
     width:80%;
     height: 40px;
-    font-size: larger;
+    font-size: large;
+    font-weight: bold;
 }
 
 #copy_link{
+    font-family:'maru';
     margin-top: 20px;
     border-radius: 30px;
     width:80%;
     height: 40px;
-    font-size: larger;
+    font-size: large;
+    font-weight:600;
 }
 
 h5{

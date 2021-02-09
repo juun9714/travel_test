@@ -86,7 +86,8 @@ html{
     border-radius: 30px;
     width:80%;
     height: 40px;
-    font-size: larger;
+    font-size: large;
+    font-weight: 600;
 }
 
 #copy_link{
@@ -94,7 +95,8 @@ html{
     border-radius: 30px;
     width:80%;
     height: 40px;
-    font-size: larger;
+    font-size: large;
+    font-weight: 600;
 }
 
 #home{
@@ -102,7 +104,8 @@ html{
     border-radius: 30px;
     width:80%;
     height: 40px;
-    font-size: larger;
+    font-size: large;
+    font-weight: 600;
 }
 
 h5{
