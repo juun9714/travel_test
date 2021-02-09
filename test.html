@@ -10,6 +10,7 @@
         function copyClick(){
             var link=document.getElementById('url');
             link.select();
+            link.setSelectionRange(0, 99999);
             document.execCommand("copy");
             alert("링크가 복사되었어요 :)");
         }
