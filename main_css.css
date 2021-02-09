@@ -31,7 +31,7 @@ html{
 }
 
 #start{
-    font-family: 'Noto Serif KR', serif;
+    font-family: "Arial";
     margin-top: 20px;
     border-radius: 30px;
     width:80%;
@@ -41,7 +41,7 @@ html{
 }
 
 #copy_link{
-    font-family: 'Noto Serif KR', serif;
+    font-family: "Times New Roman";
     margin-top: 20px;
     border-radius: 30px;
     width:80%;
