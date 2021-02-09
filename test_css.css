@@ -5,6 +5,7 @@
 }
 html{
     font-family: "maru";
+    font-weight:bold;
 }
 #content{
     text-align: center;
@@ -67,6 +68,8 @@ html{
     background-color:lightgray;
     padding:20px;
     border-radius: 30px;
+    line-height: 200%;
+    font-size:smaller;
 }
 
 @media (max-width : 541px){
@@ -119,21 +122,15 @@ h5{
     padding-bottom: 20px;
 }
 
-button{
-    font-family: 'Noto Serif KR', serif;
-}
-
 #chars_box{
     margin-top: 20px;
     background-color:lightgray;
     padding:20px;
     border-radius: 30px;
-    font-family: 'Noto Serif KR', serif;
-
 }
 
 .chars{
     margin-top: 12px;
-    font-family: 'Noto Serif KR', serif;
-
+    font-size:smaller;
+    line-height: 200%;
 }
