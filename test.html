@@ -8,13 +8,11 @@
     <script src="test_js.js"></script>
     <script>
         function copy(){
-            var obj=document.getElementById("link");
-
-            obj.select();
-            obj.setSelectionRange(0,99999);
+            var copyText = document.getElementById("our_link");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
             document.execCommand("copy");
-            obj.setSelectionRange(0,0);
-            alert("링크가 복사되었어요 ! 얼른 공유하러 가요 :)")
+            alert("링크가 복사되었어요 ! 우리 얼른 공유하러 가요 :)");
         }
     </script>
     <style>
@@ -48,7 +46,7 @@
             <!-- buttons -->
             <button id="save_img" style="font-family: Arial" onclick='startClick()'>결과 이미지로 저장</button>
             <button id="home" onclick='reTry()'>다시 하기</button>
-            <textarea id="link" value="https://juun9714.github.io/travel_test/main.html" style="visibility: hidden;"></textarea>
+            <input type="text" id="our_link" value="www.naver.com">
             <button id="copy_link" onclick="copy()">링크 복사하기</button>
             
         </div>

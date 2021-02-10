@@ -8,23 +8,14 @@
     <script type="text/javascript">
         function startClick(){
             location.href="test.html"
-        }
+                }
 
-        var clipboard=new Clipboard('#copy_link');
-
-        clipboard.on('success',function(e){
-            alert("success")
-        });
-        clipboard.on('error',function(e){
-            alert("Ctrl+C를 누르면 복사가 완료됩니다.")
-        });
-
-        function copy_to_clipboard() {    
-            var copyText = document.getElementById('myInput');
+        function copy(){
+            var copyText = document.getElementById("our_link");
             copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            document.execCommand("Copy");
-            alert('복사되었습니다, 감사합니다.');
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            document.execCommand("copy");
+            alert("링크가 복사되었어요 ! 우리 얼른 공유하러 가요 :)");
         }
 
     </script>
@@ -38,10 +29,8 @@
         <div id="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero mollitia, iusto sit omnis, eaque eum quia culpa officiis porro reiciendis debitis! Aut cupiditate fugit nam! Quidem voluptas eligendi maiores quibusdam officiis odit adipisci aut temporibus beatae totam, sequi cupiditate neque, unde fugiat quos eos quae minus explicabo magnam officia? Voluptates odit explicabo nulla, accusamus minima excepturi enim corporis provident ratione. Necessitatibus perferendis magni earum a dolor quas eveniet voluptatum mollitia minima adipisci fugit sequi, assumenda praesentium corporis rerum consequatur quod alias deleniti. At ducimus quis rem impedit provident, dicta ab optio eligendi quaerat, laudantium dolor omnis neque alias saepe nemo.</div>
        
         <button id="start" onclick='startClick()'>TEST 시작하기</button>
-        <p class="box01">
-            <input id="myInput" value="https://juun9714.github.io/travel_test/main.html" readonly>
-            <button id="copy_link" onclick="copy_to_clipboard()">링크 복사하기</button>
-        </p>       
+        <input type="text" id="our_link" value="www.naver.com">
+        <button id="copy_link" onclick="copy()">링크 복사하기</button>
     </div>
     
 </body>
