@@ -90,14 +90,24 @@ html{
     font-weight: 600;
 }
 
-#copy_link{
-    margin-top: 20px;
-    border-radius: 30px;
-    width:80%;
-    height: 40px;
-    font-size: small;
-    font-weight: 600;
+#our_link{
+    position: relative;
+    width:55%;
+    height:24px;
+    border-style: none;
+    background-color: lightgray;
+    border-radius: 5px;
 }
+#copy_link{
+    position: relative;
+    margin-top: 20px;
+    width:20%;
+    height: 24px;
+    font-size:10px;
+    font-weight: 600;
+    border-style: none;
+}
+
 
 #home{
     margin-top: 20px;
