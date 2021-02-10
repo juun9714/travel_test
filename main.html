@@ -9,16 +9,6 @@
         function startClick(){
             location.href="test.html"
         }
-
-        function copy(){
-            var obj=document.getElementById("link");
-
-            obj.select();
-            obj.setSelectionRange(0,99999);
-            document.execCommand("copy");
-            obj.setSelectionRange(0,0);
-            alert("링크가 복사되었어요 ! 얼른 공유하러 가요 :)")
-        }
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Noto+Serif+KR&display=swap');
@@ -30,9 +20,17 @@
         <div id="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero mollitia, iusto sit omnis, eaque eum quia culpa officiis porro reiciendis debitis! Aut cupiditate fugit nam! Quidem voluptas eligendi maiores quibusdam officiis odit adipisci aut temporibus beatae totam, sequi cupiditate neque, unde fugiat quos eos quae minus explicabo magnam officia? Voluptates odit explicabo nulla, accusamus minima excepturi enim corporis provident ratione. Necessitatibus perferendis magni earum a dolor quas eveniet voluptatum mollitia minima adipisci fugit sequi, assumenda praesentium corporis rerum consequatur quod alias deleniti. At ducimus quis rem impedit provident, dicta ab optio eligendi quaerat, laudantium dolor omnis neque alias saepe nemo.</div>
        
         <button id="start" onclick='startClick()'>TEST 시작하기</button>
+        <input type="text" id="link" value="https://juun9714.github.io/travel_test/main.html"></input>
         <button id="copy_link" onclick="copy()">링크 복사하기</button>
-        <textarea id="link" style="visibility: hidden;">https://juun9714.github.io/travel_test/main.html</textarea>
     </div>
     
 </body>
 </html>
+
+<!--
+구현해야 할 것
+1. 링크 복사 기능 -> 왜 안되는지 ...
+2. 결과 이미지로 저장하는 기능 
+3. 여행 같이 갈 때, 잘 맞는 또는 잘 맞지 않는 유형 
+
+-->

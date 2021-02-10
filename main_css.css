@@ -51,3 +51,10 @@ html{
 h5{
     font-size:larger;
 }
+
+#link{
+    width:75%;
+    border-style: none;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
