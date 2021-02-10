@@ -58,3 +58,23 @@ h5{
     text-align: center;
     font-family:'Courier New', Courier, monospace;
 }
+
+.box01{
+    text-align: center;
+}
+.box01 input{
+    border: none;
+    font-size: 15px;
+    outline: none;
+    text-align: center;
+    visibility: hidden;
+}
+.box01 button{
+    margin-top: 20px;
+    border-radius: 30px;
+    width:80%;
+    height: 40px;
+    font-size:small;
+    font-weight:600;
+}
+
