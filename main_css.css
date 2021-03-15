@@ -1,24 +1,32 @@
 @font-face{
-    src:url("./font/MaruBuri-Regular.ttf");
-    font-family:"maru";
+    src:url("./font/neodgm_pro.ttf");
+    font-family:"neo";
 }
 
 html{
-    font-family:"maru";
+    font-family:"neo";
+    background:linear-gradient(109deg,#b5d692,#a8d2a8)
 }
-
+#title{
+    
+    text-align: left;
+    padding-top:50px;
+    padding-left: 10%;
+    padding-right:10%;
+    padding-bottom: 45px;
+    font-size:40px;
+}
 #content{
     text-align: center;
     margin: auto;
+    font-family:"neo";
     width:540px;
-    font-family: 'Noto Serif KR', serif;
 }
 
-#box{
-    background-color:lightgray;
-    padding:20px;
-    border-radius: 30px;
+#camera{
+    width:80%;
 }
+
 
 @media (max-width : 541px){
     /*
@@ -31,12 +39,8 @@ html{
 }
 
 #start{
-    margin-top: 20px;
-    border-radius: 30px;
-    width:80%;
-    height: 40px;
-    font-size: small;
-    font-weight: bold;
+    padding-top:40px;
+    width:40%;
 }
 #our_link{
     position: relative;
@@ -56,7 +60,6 @@ html{
     border-style: none;
 }
 
-
-h5{
-    font-size:larger;
+button{
+    font-family:"neo";
 }

@@ -1,10 +1,12 @@
-
 @font-face{
-    src:url("./font/MaruBuri-Regular.ttf");
-    font-family:"maru";
+    src:url("./font/neodgm_pro.ttf");
+    font-family:"neo";
+}
+button{
+    font-family:"neo";
 }
 html{
-    font-family:"maru";
+    font-family:"neo";
 }
 #content{
     text-align: center;
