@@ -31,13 +31,13 @@ html{
 }
 #one{
     width:90%;
-    padding-bottom: 20px;
+    margin-bottom:20px;
 }
 #two{
-    padding-bottom: 50px;
     width:90%;
 }
 #gauge{
+    padding-top:50px;
     width:90%;
 }
 
@@ -62,7 +62,12 @@ html{
     #content{
         width:90%;
     }
-
+    #ques{
+        font-size:15px;
+    }
+    #loading{
+        width:60%;
+    }
 }
 
 #shot{
