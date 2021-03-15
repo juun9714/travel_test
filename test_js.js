@@ -24,7 +24,20 @@ const question_list={
     q11:"Q11. 유명 맛집을 찾아갔다. 그러나 오늘이 하필 휴무일이다.",
     q12:"Q12. 급히 다음 코스로 향하는 도중 매력적인 버스킹이 진행 중이다.",
 }
-
+const gauge_list={
+    q1:"img/gauge/gauge1.png", 
+    q2:"img/gauge/gauge2.png",
+    q3:"img/gauge/gauge3.png",
+    q4:"img/gauge/gauge4.png",
+    q5:"img/gauge/gauge5.png",
+    q6:"img/gauge/gauge6.png",
+    q7:"img/gauge/gauge7.png",
+    q8:"img/gauge/gauge8.png",
+    q9:"img/gauge/gauge9.png",
+    q10:"img/gauge/gauge10.png",
+    q11:"img/gauge/gauge11.png",
+    q12:"img/gauge/gauge12.png"
+}
 const answer_list={
     q1:{
         a1:"img/choice/01_a.png",
@@ -39,40 +52,40 @@ const answer_list={
         a2:"img/choice/03_b.png"
     },
     q4:{
-        a1:"Q4의 A1",
-        a2:"Q4의 A2"
+        a1:"img/choice/04_a.png",
+        a2:"img/choice/04_b.png"
     },
     q5:{
-        a1:"Q5의 A1",
-        a2:"Q5의 A2"
+        a1:"img/choice/05_a.png",
+        a2:"img/choice/05_b.png"
     },
     q6:{
-        a1:"Q6의 A1",
-        a2:"Q6의 A2"
+        a1:"img/choice/06_a.png",
+        a2:"img/choice/06_b.png"
     },
     q7:{
-        a1:"Q7의 A1",
-        a2:"Q7의 A2"
+        a1:"img/choice/07_a.png",
+        a2:"img/choice/07_b.png"
     },
     q8:{
-        a1:"Q8의 A1",
-        a2:"Q8의 A2"
+        a1:"img/choice/08_a.png",
+        a2:"img/choice/08_b.png"
     },
     q9:{
-        a1:"Q9의 A1",
-        a2:"Q9의 A2"
+        a1:"img/choice/09_a.png",
+        a2:"img/choice/09_b.png"
     },
     q10:{
-        a1:"Q10의 A1",
-        a2:"Q10의 A2"
+        a1:"img/choice/10_a.png",
+        a2:"img/choice/10_b.png"
     },
     q11:{
-        a1:"Q11의 A1",
-        a2:"Q11의 A2"
+        a1:"img/choice/11_a.png",
+        a2:"img/choice/11_b.png"
     },
     q12:{
-        a1:"Q12의 A1",
-        a2:"Q12의 A2"
+        a1:"img/choice/12_a.png",
+        a2:"img/choice/12_b.png"
     }
 }
 
@@ -564,11 +577,26 @@ function getMBTI(){
     }
 }
 
+var load;
+
+function loadTime(){
+    load=setTimeout(function(){
+        loading.style.display='none';
+    },2500);
+    
+}
 function goToResult(){
     getMBTI()
     qna_content.style.display='none'
-    result_content.style.visibility='visible'
+    loading.style.visibility='visible';
+    loadTime();
+
+    var result;
+    result=setTimeout(function(){
+        result_content.style.visibility='visible';
+    },2500);
 }
+
 
 function AddI(){
     //ISTP
@@ -579,88 +607,99 @@ function AddI(){
         ques.textContent=question_list.q2
         one.src=answer_list.q2.a1
         two.src=answer_list.q2.a2
+        gauge.src=gauge_list.q2
     }else if(MBTI.Qnum==2){
         //IE
-        MBTI.I++
+        MBTI.E++
         MBTI.Qnum++
         ques.textContent=question_list.q3
-        one.textContent=answer_list.q3.a1
-        two.textContent=answer_list.q3.a2
+        one.src=answer_list.q3.a1
+        two.src=answer_list.q3.a2
+        gauge.src=gauge_list.q3
     }
     else if(MBTI.Qnum==3){
         //PJ
         MBTI.P++
         MBTI.Qnum++
         ques.textContent=question_list.q4
-        one.textContent=answer_list.q4.a1
-        two.textContent=answer_list.q4.a2
+        one.src=answer_list.q4.a1
+        two.src=answer_list.q4.a2
+        gauge.src=gauge_list.q4
     }
     else if(MBTI.Qnum==4){
         //TF
-        MBTI.T++
+        MBTI.F++
         MBTI.Qnum++
         ques.textContent=question_list.q5
-        one.textContent=answer_list.q5.a1
-        two.textContent=answer_list.q5.a2
+        one.src=answer_list.q5.a1
+        two.src=answer_list.q5.a2
+        gauge.src=gauge_list.q5
     }
     else if(MBTI.Qnum==5){
         //IE
-        MBTI.I++
+        MBTI.E++
         MBTI.Qnum++
         ques.textContent=question_list.q6
-        one.textContent=answer_list.q6.a1
-        two.textContent=answer_list.q6.a2
+        one.src=answer_list.q6.a1
+        two.src=answer_list.q6.a2
+        gauge.src=gauge_list.q6
     }
     else if(MBTI.Qnum==6){
         //SN
-        MBTI.S++
+        MBTI.N++
         MBTI.Qnum++
         ques.textContent=question_list.q7
-        one.textContent=answer_list.q7.a1
-        two.textContent=answer_list.q7.a2
+        one.src=answer_list.q7.a1
+        two.src=answer_list.q7.a2
+        gauge.src=gauge_list.q7
     }else if(MBTI.Qnum==7){
         //IE
-        MBTI.I++
+        MBTI.E++
         MBTI.Qnum++
         ques.textContent=question_list.q8
-        one.textContent=answer_list.q8.a1
-        two.textContent=answer_list.q8.a2
+        one.src=answer_list.q8.a1
+        two.src=answer_list.q8.a2
+        gauge.src=gauge_list.q8
     }
     else if(MBTI.Qnum==8){
         //TF
-        MBTI.T++
+        MBTI.F++
         MBTI.Qnum++
         ques.textContent=question_list.q9
-        one.textContent=answer_list.q9.a1
-        two.textContent=answer_list.q9.a2
+        one.src=answer_list.q9.a1
+        two.src=answer_list.q9.a2
+        gauge.src=gauge_list.q9
     }
     else if(MBTI.Qnum==9){
         //SN
         MBTI.S++
         MBTI.Qnum++
         ques.textContent=question_list.q10
-        one.textContent=answer_list.q10.a1
-        two.textContent=answer_list.q10.a2
+        one.src=answer_list.q10.a1
+        two.src=answer_list.q10.a2
+        gauge.src=gauge_list.q10
         //T and F
     }else if(MBTI.Qnum==10){
         //TF
         MBTI.T++
         MBTI.Qnum++
         ques.textContent=question_list.q11
-        one.textContent=answer_list.q11.a1
-        two.textContent=answer_list.q11.a2
+        one.src=answer_list.q11.a1
+        two.src=answer_list.q11.a2
+        gauge.src=gauge_list.q11
     }
     else if(MBTI.Qnum==11){
         //PJ
         MBTI.P++
         MBTI.Qnum++
         ques.textContent=question_list.q12
-        one.textContent=answer_list.q12.a1
-        two.textContent=answer_list.q12.a2
+        one.src=answer_list.q12.a1
+        two.src=answer_list.q12.a2
+        gauge.src=gauge_list.q12
     }
     else if(MBTI.Qnum==12){
         //PJ
-        MBTI.P++
+        MBTI.J+=1.5
         MBTI.Qnum++
         goToResult()
         //결과 화면으로 
@@ -676,87 +715,98 @@ function AddE(){
         ques.textContent=question_list.q2
         one.src=answer_list.q2.a1
         two.src=answer_list.q2.a2
+        gauge.src=gauge_list.q2
     }else if(MBTI.Qnum==2){
         //IE
-        MBTI.E++
+        MBTI.I++
         MBTI.Qnum++
         ques.textContent=question_list.q3
-        one.textContent=answer_list.q3.a1
-        two.textContent=answer_list.q3.a2
+        one.src=answer_list.q3.a1
+        two.src=answer_list.q3.a2
+        gauge.src=gauge_list.q3
     }
     else if(MBTI.Qnum==3){
         //PJ
         MBTI.J++
         MBTI.Qnum++
         ques.textContent=question_list.q4
-        one.textContent=answer_list.q4.a1
-        two.textContent=answer_list.q4.a2
+        one.src=answer_list.q4.a1
+        two.src=answer_list.q4.a2
+        gauge.src=gauge_list.q4
     }
     else if(MBTI.Qnum==4){
         //TF
-        MBTI.F++
+        MBTI.T++
         MBTI.Qnum++
         ques.textContent=question_list.q5
-        one.textContent=answer_list.q5.a1
-        two.textContent=answer_list.q5.a2
+        one.src=answer_list.q5.a1
+        two.src=answer_list.q5.a2
+        gauge.src=gauge_list.q5
     }
     else if(MBTI.Qnum==5){
         //IE
-        MBTI.E++
+        MBTI.I++
         MBTI.Qnum++
         ques.textContent=question_list.q6
-        one.textContent=answer_list.q6.a1
-        two.textContent=answer_list.q6.a2
+        one.src=answer_list.q6.a1
+        two.src=answer_list.q6.a2
+        gauge.src=gauge_list.q6
     }
     else if(MBTI.Qnum==6){
         //SN
-        MBTI.N++
+        MBTI.S++
         MBTI.Qnum++
         ques.textContent=question_list.q7
-        one.textContent=answer_list.q7.a1
-        two.textContent=answer_list.q7.a2
+        one.src=answer_list.q7.a1
+        two.src=answer_list.q7.a2
+        gauge.src=gauge_list.q7
     }else if(MBTI.Qnum==7){
         //IE
-        MBTI.E++
+        MBTI.I++
         MBTI.Qnum++
         ques.textContent=question_list.q8
-        one.textContent=answer_list.q8.a1
-        two.textContent=answer_list.q8.a2
+        one.src=answer_list.q8.a1
+        two.src=answer_list.q8.a2
+        gauge.src=gauge_list.q8
     }
     else if(MBTI.Qnum==8){
         //TF
-        MBTI.F++
+        MBTI.T++
         MBTI.Qnum++
         ques.textContent=question_list.q9
-        one.textContent=answer_list.q9.a1
-        two.textContent=answer_list.q9.a2
+        one.src=answer_list.q9.a1
+        two.src=answer_list.q9.a2
+        gauge.src=gauge_list.q9
     }
     else if(MBTI.Qnum==9){
         //SN
         MBTI.N++
         MBTI.Qnum++
         ques.textContent=question_list.q10
-        one.textContent=answer_list.q10.a1
-        two.textContent=answer_list.q10.a2
+        one.src=answer_list.q10.a1
+        two.src=answer_list.q10.a2
+        gauge.src=gauge_list.q10
     }else if(MBTI.Qnum==10){
         //TF
         MBTI.F++
         MBTI.Qnum++
         ques.textContent=question_list.q11
-        one.textContent=answer_list.q11.a1
-        two.textContent=answer_list.q11.a2
+        one.src=answer_list.q11.a1
+        two.src=answer_list.q11.a2
+        gauge.src=gauge_list.q11
     }
     else if(MBTI.Qnum==11){
         //PJ
         MBTI.J++
         MBTI.Qnum++
         ques.textContent=question_list.q12
-        one.textContent=answer_list.q12.a1
-        two.textContent=answer_list.q12.a2
+        one.src=answer_list.q12.a1
+        two.src=answer_list.q12.a2
+        gauge.src=gauge_list.q12
     }
     else if(MBTI.Qnum==12){
         //PJ
-        MBTI.J+=1.5
+        MBTI.F++
         MBTI.Qnum++
         goToResult()
         //결과 화면으로 

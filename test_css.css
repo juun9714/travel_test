@@ -19,7 +19,10 @@ html{
         margin: 100px auto;
     }
 }
-
+#loading{
+    width:300px;
+    padding-top:30%;
+}
 #ques{
     font-size: 25px;
     line-height: 130%;
