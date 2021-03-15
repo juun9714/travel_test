@@ -2,11 +2,9 @@
     src:url("./font/neodgm_pro.ttf");
     font-family:"neo";
 }
-button{
-    font-family:"neo";
-}
 html{
-    font-family:"neo";
+        font-family:"neo";
+        background:linear-gradient(109deg,#b5d692,#a8d2a8)
 }
 #content{
     text-align: center;
@@ -23,41 +21,22 @@ html{
 }
 
 #ques{
-    font-size: medium;
-    padding-bottom: 20px;
+    font-size: 25px;
+    line-height: 130%;
+    padding-bottom: 40px;
+    word-break: keep-all;
 }
 #one{
-    margin-top: 20px;
-    border-radius: 30px;
-    width:80%;
-    height: 40px;
-    font-size: larger;
+    width:90%;
+    padding-bottom: 20px;
 }
-
 #two{
-    margin-top: 20px;
-    border-radius: 30px;
-    width:80%;
-    height: 40px;
-    font-size: larger;
+    padding-bottom: 50px;
+    width:90%;
 }
-#anchor{
-    background-color: lightgray;
-    text-align: center;
-    margin:auto;
-    display: block;
-    border-radius: 30px;
-    width:80%;
-    height: 40px;
-    font-size: larger;
-    text-decoration: none;
-    color: black;
-    border-color: black;
-    border:2px solid black;
+#gauge{
+    width:90%;
 }
-
-
-
 
 #content{
     text-align: center;

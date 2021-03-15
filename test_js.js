@@ -11,32 +11,32 @@ var MBTI={
 }
 
 const question_list={
-    q1:"Q1. 두가지 응답 중 하나를 골라주세요",
-    q2:"Q2. 두가지 응답 중 하나를 골라주세요",
-    q3:"Q3. 두가지 응답 중 하나를 골라주세요",
-    q4:"Q4. 두가지 응답 중 하나를 골라주세요",
-    q5:"Q5. 두가지 응답 중 하나를 골라주세요",
-    q6:"Q6. 두가지 응답 중 하나를 골라주세요",
-    q7:"Q7. 두가지 응답 중 하나를 골라주세요",
-    q8:"Q8. 두가지 응답 중 하나를 골라주세요",
-    q9:"Q9. 두가지 응답 중 하나를 골라주세요",
-    q10:"Q10. 두가지 응답 중 하나를 골라주세요",
-    q11:"Q11. 두가지 응답 중 하나를 골라주세요",
-    q12:"Q12. 두가지 응답 중 하나를 골라주세요",
+    q1:"Q1. 기다리고 기다리던 코로나 종식 선언! 친한 친구와 함께 해외 여행을 떠나기로 한다. 여행 코스를 짜고 있는 당신의 모습은?",
+    q2:"Q2. 여행가려는 도시에 그 지역만의 다이나믹한 액티비티와 감성적이고 조용한 카페가 유명하다. 선호하는 곳은?",
+    q3:"Q3. 여행 가기 전, 캐리어를 준비하는 당신의 모습과 더 비슷한 것은?",
+    q4:"Q4. 여행 계획을 이야기하는 중이다. 저런,,, 친구가 열심히 생각해온 코스에서 많은 문제점이 보인다. 당신의 반응은?",
+    q5:"Q5. 드디어 여행 출발! 저녁에 게스트하우스에 도착하였다. 다음 날 같은 방을 쓰는 사람과 아침을 같이 먹고 있는 중이다. 당신은 주로?",
+    q6:"Q6. 여행 중 지갑을 떨어뜨렸다. 다행히 뒤에 있던 분이 지갑을 주워주셨는데, 마침 내 이상형이다!",
+    q7:"Q7. 여행 도중, 유명한 유튜버가 촬영하는 것을 목격한다. 어...? 나에게 다가와서 인터뷰를 부탁한다.",
+    q8:"Q8. 친구와 같이 유명한 공연을 보러 극장에 간 당신! 아뿔싸, 친구가 숙소에 티켓을 두고 왔다고 당황해하면서 말한다. 당신의 맨 처음 반응은?",
+    q9:"Q9. 유명 미술관 혹은 박물관에 들어간 당신의 모습은?",
+    q10:"Q10. 여행 중, 별 빛 아래에서 친구와 술 한 잔 하면서 딥토크 중이다. 친구가 맘 속에 묻어놨던 고민을 털어놓는다. 당신의 처음 반응은?",
+    q11:"Q11. 유명 맛집을 찾아갔다. 그러나 오늘이 하필 휴무일이다.",
+    q12:"Q12. 급히 다음 코스로 향하는 도중 매력적인 버스킹이 진행 중이다.",
 }
 
 const answer_list={
     q1:{
-        a1:"Q1의 A1",
-        a2:"Q1의 A2"
+        a1:"img/choice/01_a.png",
+        a2:"img/choice/01_b.png"
     },
     q2:{
-        a1:"Q2의 A1",
-        a2:"Q2의 A2"
+        a1:"img/choice/02_a.png",
+        a2:"img/choice/02_b.png"
     },
     q3:{
-        a1:"Q3의 A1",
-        a2:"Q3의 A2"
+        a1:"img/choice/03_a.png",
+        a2:"img/choice/03_b.png"
     },
     q4:{
         a1:"Q4의 A1",
@@ -573,12 +573,14 @@ function goToResult(){
 function AddI(){
     //ISTP
     if(MBTI.Qnum==1){
-        MBTI.I++
+        //SN
+        MBTI.S++
         MBTI.Qnum++
         ques.textContent=question_list.q2
-        one.textContent=answer_list.q2.a1
-        two.textContent=answer_list.q2.a2
+        one.src=answer_list.q2.a1
+        two.src=answer_list.q2.a2
     }else if(MBTI.Qnum==2){
+        //IE
         MBTI.I++
         MBTI.Qnum++
         ques.textContent=question_list.q3
@@ -586,42 +588,46 @@ function AddI(){
         two.textContent=answer_list.q3.a2
     }
     else if(MBTI.Qnum==3){
-        MBTI.I++
+        //PJ
+        MBTI.P++
         MBTI.Qnum++
         ques.textContent=question_list.q4
         one.textContent=answer_list.q4.a1
         two.textContent=answer_list.q4.a2
-        //I and E
     }
     else if(MBTI.Qnum==4){
-        MBTI.S++
+        //TF
+        MBTI.T++
         MBTI.Qnum++
         ques.textContent=question_list.q5
         one.textContent=answer_list.q5.a1
         two.textContent=answer_list.q5.a2
     }
     else if(MBTI.Qnum==5){
-        MBTI.S++
+        //IE
+        MBTI.I++
         MBTI.Qnum++
         ques.textContent=question_list.q6
         one.textContent=answer_list.q6.a1
         two.textContent=answer_list.q6.a2
     }
     else if(MBTI.Qnum==6){
+        //SN
         MBTI.S++
         MBTI.Qnum++
         ques.textContent=question_list.q7
         one.textContent=answer_list.q7.a1
         two.textContent=answer_list.q7.a2
-        //S and N
     }else if(MBTI.Qnum==7){
-        MBTI.T++
+        //IE
+        MBTI.I++
         MBTI.Qnum++
         ques.textContent=question_list.q8
         one.textContent=answer_list.q8.a1
         two.textContent=answer_list.q8.a2
     }
     else if(MBTI.Qnum==8){
+        //TF
         MBTI.T++
         MBTI.Qnum++
         ques.textContent=question_list.q9
@@ -629,20 +635,23 @@ function AddI(){
         two.textContent=answer_list.q9.a2
     }
     else if(MBTI.Qnum==9){
-        MBTI.T++
+        //SN
+        MBTI.S++
         MBTI.Qnum++
         ques.textContent=question_list.q10
         one.textContent=answer_list.q10.a1
         two.textContent=answer_list.q10.a2
         //T and F
     }else if(MBTI.Qnum==10){
-        MBTI.P++
+        //TF
+        MBTI.T++
         MBTI.Qnum++
         ques.textContent=question_list.q11
         one.textContent=answer_list.q11.a1
         two.textContent=answer_list.q11.a2
     }
     else if(MBTI.Qnum==11){
+        //PJ
         MBTI.P++
         MBTI.Qnum++
         ques.textContent=question_list.q12
@@ -650,23 +659,25 @@ function AddI(){
         two.textContent=answer_list.q12.a2
     }
     else if(MBTI.Qnum==12){
+        //PJ
         MBTI.P++
         MBTI.Qnum++
         goToResult()
         //결과 화면으로 
-        //P and J
     }
     //alert('E: '+MBTI.E+', I: '+MBTI.I+', S: '+MBTI.S+', N: '+MBTI.N+', T: '+MBTI.T+', F: '+MBTI.F+', P: '+MBTI.P+', J: '+MBTI.J+', Qnum is '+MBTI.Qnum)
 }
 
 function AddE(){
     if(MBTI.Qnum==1){
-        MBTI.E++
+        //SN
+        MBTI.N++
         MBTI.Qnum++
         ques.textContent=question_list.q2
-        one.textContent=answer_list.q2.a1
-        two.textContent=answer_list.q2.a2
+        one.src=answer_list.q2.a1
+        two.src=answer_list.q2.a2
     }else if(MBTI.Qnum==2){
+        //IE
         MBTI.E++
         MBTI.Qnum++
         ques.textContent=question_list.q3
@@ -674,42 +685,46 @@ function AddE(){
         two.textContent=answer_list.q3.a2
     }
     else if(MBTI.Qnum==3){
-        MBTI.E++
+        //PJ
+        MBTI.J++
         MBTI.Qnum++
         ques.textContent=question_list.q4
         one.textContent=answer_list.q4.a1
         two.textContent=answer_list.q4.a2
-        //I and E
     }
     else if(MBTI.Qnum==4){
-        MBTI.N++
+        //TF
+        MBTI.F++
         MBTI.Qnum++
         ques.textContent=question_list.q5
         one.textContent=answer_list.q5.a1
         two.textContent=answer_list.q5.a2
     }
     else if(MBTI.Qnum==5){
-        MBTI.N++
+        //IE
+        MBTI.E++
         MBTI.Qnum++
         ques.textContent=question_list.q6
         one.textContent=answer_list.q6.a1
         two.textContent=answer_list.q6.a2
     }
     else if(MBTI.Qnum==6){
+        //SN
         MBTI.N++
         MBTI.Qnum++
         ques.textContent=question_list.q7
         one.textContent=answer_list.q7.a1
         two.textContent=answer_list.q7.a2
-        //S and N
     }else if(MBTI.Qnum==7){
-        MBTI.F++
+        //IE
+        MBTI.E++
         MBTI.Qnum++
         ques.textContent=question_list.q8
         one.textContent=answer_list.q8.a1
         two.textContent=answer_list.q8.a2
     }
     else if(MBTI.Qnum==8){
+        //TF
         MBTI.F++
         MBTI.Qnum++
         ques.textContent=question_list.q9
@@ -717,20 +732,22 @@ function AddE(){
         two.textContent=answer_list.q9.a2
     }
     else if(MBTI.Qnum==9){
-        MBTI.F++
+        //SN
+        MBTI.N++
         MBTI.Qnum++
         ques.textContent=question_list.q10
         one.textContent=answer_list.q10.a1
         two.textContent=answer_list.q10.a2
-        //T and F
     }else if(MBTI.Qnum==10){
-        MBTI.J++
+        //TF
+        MBTI.F++
         MBTI.Qnum++
         ques.textContent=question_list.q11
         one.textContent=answer_list.q11.a1
         two.textContent=answer_list.q11.a2
     }
     else if(MBTI.Qnum==11){
+        //PJ
         MBTI.J++
         MBTI.Qnum++
         ques.textContent=question_list.q12
@@ -738,11 +755,11 @@ function AddE(){
         two.textContent=answer_list.q12.a2
     }
     else if(MBTI.Qnum==12){
-        MBTI.J++
+        //PJ
+        MBTI.J+=1.5
         MBTI.Qnum++
         goToResult()
         //결과 화면으로 
-        //P and J
     }
     //alert('E: '+MBTI.E+', I: '+MBTI.I+', S: '+MBTI.S+', N: '+MBTI.N+', T: '+MBTI.T+', F: '+MBTI.F+', P: '+MBTI.P+', J: '+MBTI.J+', Qnum is '+MBTI.Qnum)
 }
