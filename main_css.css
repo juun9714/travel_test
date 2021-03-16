@@ -46,6 +46,8 @@ html{
 #start{
     padding-top:40px;
     width:45%;
+    display:block;
+    margin:0 auto;
 }
 #our_link{
     position: relative;
