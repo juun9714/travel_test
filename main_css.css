@@ -5,7 +5,7 @@
 
 html{
     font-family:"neo";
-    background:linear-gradient(109deg,#b5d692,#a8d2a8)
+    background:linear-gradient(109deg,#b5d692, 50%,#a8d2a8)
 }
 #title{
     
