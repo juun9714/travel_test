@@ -231,10 +231,10 @@ const result_list={
         board_img:"./img/result/16rabbit_ESFP/resultPage_board16_ESFP.png",
         summary:"당신은 스페인 바로셀로나를 여행하고 있는 들판을 누비는 토끼입니다.",
         nickname:"들판을 누비는 토끼",
-        character_img:"./img/result/16rabbit_ESFP/resultPage_character16_ESFP",
+        character_img:"./img/result/16rabbit_ESFP/resultPage_character16_ESFP.png",
         character:"무계획이 계획인 당신, 여행 중에도 순간순간 끌리는 곳으로 발걸음을 옮기게 돼요. 호기심이 많은 만큼 여행지에서 하고 싶은 것도 많을 거 같아요. 함께 여행하는 친구도 지치지 않는 체력을 소유자여야 해요. 그리고 혼자 가는 여행이라도 걱정하지 말아요! 특유의 활발함으로 여행지에서도 새로운 친구들을 사귈 수 있을 거에요.",
         location:"스페인 바로셀로나",
-        loca_img:"./img/result/16rabbit_ESFP/resultPage_landscape16_ESFP",
+        loca_img:"./img/result/16rabbit_ESFP/resultPage_landscape16_ESFP.png",
         contents:[
             "피카소의 작품, 가우디의 건축물, 플라멩고까지 볼거리가 가득한 스페인 바르셀로나의 매력에 빠져보세요! 호기심이 많고, 혼자있는 것을 싫어하는 당신이 좋아할 수 밖에 없는 해변도시에요. 새로운 사람들과 함께 람블라 거리에서 식사를 하고, 샹그리아 한잔을 즐기세요! ",
             "도시 곳곳에서의 예술작품들을 즐겼다면, 식문화를 즐길 시간이에요! 와인에 곁들여 먹는 다양한 안주들, 타파스를 꼭 먹어보아야 한답니다! 신시가지와 구시가지를 돌아다니며 유명한 타파스 바를 투어해보세요! 한국인 입맛에 딱 맞는 퀴멧 앤 퀴멧과 비니투스를 추천해요! ",
@@ -343,7 +343,7 @@ const result_list={
             "들판을 누비는 토끼와 여행을 함께 한다면, 두 배로 즐겁고 편안한 여행을 할 수 있을 거에요 !"
         ],
         partner:"들판을 누비는 토끼",
-        partner_img:"./img/result/16rabbit_ESFP/resultPage_character16_ESFP"
+        partner_img:"./img/result/16rabbit_ESFP/resultPage_character16_ESFP.png"
     },
     ESFJ:{
         //준희
