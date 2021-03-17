@@ -806,7 +806,7 @@ function AddE(){
     }
     else if(MBTI.Qnum==12){
         //PJ
-        MBTI.F++
+        MBTI.P++
         MBTI.Qnum++
         goToResult()
         //결과 화면으로 
