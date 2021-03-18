@@ -388,7 +388,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.ISFP.partner
                     partner_img.src=result_list.ISFP.partner_img
                     partner_info.textContent=result_list.ISFP.contents[2]
-                    //alert("ISFP")
                 }
                 else{
                     board.src=result_list.ISFJ.board_img
@@ -403,7 +402,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.ISFJ.partner
                     partner_img.src=result_list.ISFJ.partner_img
                     partner_info.textContent=result_list.ISFJ.contents[2]
-                    //alert("ISFJ")
                 }
             }
             else{
@@ -421,7 +419,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.ISTP.partner
                     partner_img.src=result_list.ISTP.partner_img
                     partner_info.textContent=result_list.ISTP.contents[2]
-                    //alert("ISTP")
                 }
                 else{
                     board.src=result_list.ISTJ.board_img
@@ -436,7 +433,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.ISTJ.partner
                     partner_img.src=result_list.ISTJ.partner_img
                     partner_info.textContent=result_list.ISTJ.contents[2]
-                    //alert("ISTJ")
                 }
             }
         }
@@ -457,7 +453,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.INFP.partner
                     partner_img.src=result_list.INFP.partner_img
                     partner_info.textContent=result_list.INFP.contents[2]
-                    //alert("INFP")
                 }
                 else{
                     board.src=result_list.INFJ.board_img
@@ -472,7 +467,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.INFJ.partner
                     partner_img.src=result_list.INFJ.partner_img
                     partner_info.textContent=result_list.INFJ.contents[2]
-                    //alert("INFJ")
                 }
             }
             else{
@@ -490,7 +484,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.INTP.partner
                     partner_img.src=result_list.INTP.partner_img
                     partner_info.textContent=result_list.INTP.contents[2]
-                    //alert("INTP")
                 }
                 else{
                     board.src=result_list.INTJ.board_img
@@ -505,7 +498,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.INTJ.partner
                     partner_img.src=result_list.INTJ.partner_img
                     partner_info.textContent=result_list.INTJ.contents[2]
-                    //alert("INTJ")
                 }
             }
         }
@@ -529,7 +521,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.ESFP.partner
                     partner_img.src=result_list.ESFP.partner_img
                     partner_info.textContent=result_list.ESFP.contents[2]
-                    //alert("ESFP")
                 }
                 else{
                     board.src=result_list.ESFJ.board_img
@@ -544,7 +535,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.ESFJ.partner
                     partner_img.src=result_list.ESFJ.partner_img
                     partner_info.textContent=result_list.ESFJ.contents[2]
-                    //alert("ESFJ")
                 }
             }
             else{
@@ -562,7 +552,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.ESTP.partner
                     partner_img.src=result_list.ESTP.partner_img
                     partner_info.textContent=result_list.ESTP.contents[2]
-                    //alert("ESTP")
                 }
                 else{
                     board.src=result_list.ESTJ.board_img
@@ -577,7 +566,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.ESTJ.partner
                     partner_img.src=result_list.ESTJ.partner_img
                     partner_info.textContent=result_list.ESTJ.contents[2]
-                    //alert("ESTJ")
                 }
             }
         }
@@ -598,7 +586,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.ENFP.partner
                     partner_img.src=result_list.ENFP.partner_img
                     partner_info.textContent=result_list.ENFP.contents[2]
-                    //alert("ENFP")
                 }
                 else{
                     board.src=result_list.ENFJ.board_img
@@ -613,7 +600,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.ENFJ.partner
                     partner_img.src=result_list.ENFJ.partner_img
                     partner_info.textContent=result_list.ENFJ.contents[2]
-                    //alert("ENFJ")
                 }
             }
             else{
@@ -631,7 +617,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.ENTP.partner
                     partner_img.src=result_list.ENTP.partner_img
                     partner_info.textContent=result_list.ENTP.contents[2]
-                    //alert("ENTP")
                 }
                 else{
                     board.src=result_list.ENTJ.board_img
@@ -646,7 +631,6 @@ function getMBTI(){
                     partner_name.textContent=result_list.ENTJ.partner
                     partner_img.src=result_list.ENTJ.partner_img
                     partner_info.textContent=result_list.ENTJ.contents[2]
-                    //alert("ENTJ")
                 }
             }
         }
