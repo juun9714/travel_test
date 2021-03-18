@@ -70,6 +70,7 @@ html{
     border-style: none;
     background-color: lightgray;
     border-radius: 5px;
+    padding:0;
 }
 #copy_link{
     margin-top: 5px;
