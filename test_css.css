@@ -15,15 +15,9 @@ html{
     width:540px;
     word-break:keep-all;
 }
-@media (max-width : 541px){
-    #content{
-        width:80%;
-        margin: 100px auto;
-    }
-}
 
 #result_content{
-    margin: 70px auto;
+    margin: 100px auto;
     width:90%;
 }
 
@@ -51,15 +45,24 @@ html{
     width:100%;
 }
 
+#result_box{
+    background-color:lightgray;
+    padding:20px;
+    border-radius: 30px;
+    line-height: 200%;
+    font-size:11px;
+}
+
 @media (max-width : 541px){
     /*
     가로가 540px 보다 클 때  
     */
     #content{
         width:90%;
+        margin: 100px auto;
     }
     #ques{
-        font-size:15px;
+        font-size:17px;
     }
     #loading{
         width:60%;
@@ -77,7 +80,6 @@ html{
     border-radius: 5px;
 }
 #copy_link{
-    position: relative;
     margin-top: 20px;
     width:20%;
     height: 24px;
@@ -107,8 +109,7 @@ html{
 
 #board{
     padding-top:50px;
-    width:90%;
-    margin-left:5%;
+    width:100%;
 }
 
 #landscape{
@@ -133,10 +134,17 @@ html{
     margin-bottom: 0;
 }
 
+
+
 .small_dash{
     margin:0;
 }
 
 #nick, #location, #partner_name{
     margin-top:0;
+}
+
+#title{
+    font-size:38px;
+    text-align: left;
 }
