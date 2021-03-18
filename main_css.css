@@ -29,14 +29,6 @@ html{
 }
 
 
-@media (max-width : 541px){
-    /*
-    가로가 540px 보다 클 때  
-    */
-    #content{
-        width:90%;
-    }
-}
 
 @media(max-width:450px){
     #title{
@@ -70,4 +62,18 @@ html{
 
 button{
     font-family:"neo";
+}
+
+
+@media (max-width : 541px){
+    /*
+    가로가 540px 보다 클 때  
+    */
+    #content{
+        width:90%;
+    }
+    #copy_link{
+        font-size:5px;
+    }
+    
 }
