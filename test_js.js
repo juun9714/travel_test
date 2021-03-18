@@ -381,14 +381,14 @@ function getMBTI(){
                     nick.textContent=result_list.ISFP.nickname
                     character.src=result_list.ISFP.character_img
                     travel_style.textContent=result_list.ISFP.character
-                    location.textContent=result_list.ISFP.location
+                    loca.textContent=result_list.ISFP.location
                     landscape.src=result_list.ISFP.loca_img
                     loca_one.textContent=result_list.ISFP.contents[0]
                     loca_two.textContent=result_list.ISFP.contents[1]
                     partner_name.textContent=result_list.ISFP.partner
                     partner_img.src=result_list.ISFP.partner_img
                     partner_info.textContent=result_list.ISFP.contents[2]
-                    alert("ISFP")
+                    //alert("ISFP")
                 }
                 else{
                     board.src=result_list.ISFJ.board_img
@@ -396,14 +396,14 @@ function getMBTI(){
                     nick.textContent=result_list.ISFJ.nickname
                     character.src=result_list.ISFJ.character_img
                     travel_style.textContent=result_list.ISFJ.character
-                    location.textContent=result_list.ISFJ.location
+                    loca.textContent=result_list.ISFJ.location
                     landscape.src=result_list.ISFJ.loca_img
                     loca_one.textContent=result_list.ISFJ.contents[0]
                     loca_two.textContent=result_list.ISFJ.contents[1]
                     partner_name.textContent=result_list.ISFJ.partner
                     partner_img.src=result_list.ISFJ.partner_img
                     partner_info.textContent=result_list.ISFJ.contents[2]
-                    alert("ISFJ")
+                    //alert("ISFJ")
                 }
             }
             else{
@@ -414,14 +414,14 @@ function getMBTI(){
                     nick.textContent=result_list.ISTP.nickname
                     character.src=result_list.ISTP.character_img
                     travel_style.textContent=result_list.ISTP.character
-                    location.textContent=result_list.ISTP.location
+                    loca.textContent=result_list.ISTP.location
                     landscape.src=result_list.ISTP.loca_img
                     loca_one.textContent=result_list.ISTP.contents[0]
                     loca_two.textContent=result_list.ISTP.contents[1]
                     partner_name.textContent=result_list.ISTP.partner
                     partner_img.src=result_list.ISTP.partner_img
                     partner_info.textContent=result_list.ISTP.contents[2]
-                    alert("ISTP")
+                    //alert("ISTP")
                 }
                 else{
                     board.src=result_list.ISTJ.board_img
@@ -429,14 +429,14 @@ function getMBTI(){
                     nick.textContent=result_list.ISTJ.nickname
                     character.src=result_list.ISTJ.character_img
                     travel_style.textContent=result_list.ISTJ.character
-                    location.textContent=result_list.ISTJ.location
+                    loca.textContent=result_list.ISTJ.location
                     landscape.src=result_list.ISTJ.loca_img
                     loca_one.textContent=result_list.ISTJ.contents[0]
                     loca_two.textContent=result_list.ISTJ.contents[1]
                     partner_name.textContent=result_list.ISTJ.partner
                     partner_img.src=result_list.ISTJ.partner_img
                     partner_info.textContent=result_list.ISTJ.contents[2]
-                    alert("ISTJ")
+                    //alert("ISTJ")
                 }
             }
         }
@@ -450,14 +450,14 @@ function getMBTI(){
                     nick.textContent=result_list.INFP.nickname
                     character.src=result_list.INFP.character_img
                     travel_style.textContent=result_list.INFP.character
-                    location.textContent=result_list.INFP.location
+                    loca.textContent=result_list.INFP.location
                     landscape.src=result_list.INFP.loca_img
                     loca_one.textContent=result_list.INFP.contents[0]
                     loca_two.textContent=result_list.INFP.contents[1]
                     partner_name.textContent=result_list.INFP.partner
                     partner_img.src=result_list.INFP.partner_img
                     partner_info.textContent=result_list.INFP.contents[2]
-                    alert("INFP")
+                    //alert("INFP")
                 }
                 else{
                     board.src=result_list.INFJ.board_img
@@ -465,14 +465,14 @@ function getMBTI(){
                     nick.textContent=result_list.INFJ.nickname
                     character.src=result_list.INFJ.character_img
                     travel_style.textContent=result_list.INFJ.character
-                    location.textContent=result_list.INFJ.location
+                    loca.textContent=result_list.INFJ.location
                     landscape.src=result_list.INFJ.loca_img
                     loca_one.textContent=result_list.INFJ.contents[0]
                     loca_two.textContent=result_list.INFJ.contents[1]
                     partner_name.textContent=result_list.INFJ.partner
                     partner_img.src=result_list.INFJ.partner_img
                     partner_info.textContent=result_list.INFJ.contents[2]
-                    alert("INFJ")
+                    //alert("INFJ")
                 }
             }
             else{
@@ -483,14 +483,14 @@ function getMBTI(){
                     nick.textContent=result_list.INTP.nickname
                     character.src=result_list.INTP.character_img
                     travel_style.textContent=result_list.INTP.character
-                    location.textContent=result_list.INTP.location
+                    loca.textContent=result_list.INTP.location
                     landscape.src=result_list.INTP.loca_img
                     loca_one.textContent=result_list.INTP.contents[0]
                     loca_two.textContent=result_list.INTP.contents[1]
                     partner_name.textContent=result_list.INTP.partner
                     partner_img.src=result_list.INTP.partner_img
                     partner_info.textContent=result_list.INTP.contents[2]
-                    alert("INTP")
+                    //alert("INTP")
                 }
                 else{
                     board.src=result_list.INTJ.board_img
@@ -498,14 +498,14 @@ function getMBTI(){
                     nick.textContent=result_list.INTJ.nickname
                     character.src=result_list.INTJ.character_img
                     travel_style.textContent=result_list.INTJ.character
-                    location.textContent=result_list.INTJ.location
+                    loca.textContent=result_list.INTJ.location
                     landscape.src=result_list.INTJ.loca_img
                     loca_one.textContent=result_list.INTJ.contents[0]
                     loca_two.textContent=result_list.INTJ.contents[1]
                     partner_name.textContent=result_list.INTJ.partner
                     partner_img.src=result_list.INTJ.partner_img
                     partner_info.textContent=result_list.INTJ.contents[2]
-                    alert("INTJ")
+                    //alert("INTJ")
                 }
             }
         }
@@ -522,14 +522,14 @@ function getMBTI(){
                     nick.textContent=result_list.ESFP.nickname
                     character.src=result_list.ESFP.character_img
                     travel_style.textContent=result_list.ESFP.character
-                    location.textContent=result_list.ESFP.location
+                    loca.textContent=result_list.ESFP.location
                     landscape.src=result_list.ESFP.loca_img
                     loca_one.textContent=result_list.ESFP.contents[0]
                     loca_two.textContent=result_list.ESFP.contents[1]
                     partner_name.textContent=result_list.ESFP.partner
                     partner_img.src=result_list.ESFP.partner_img
                     partner_info.textContent=result_list.ESFP.contents[2]
-                    alert("ESFP")
+                    //alert("ESFP")
                 }
                 else{
                     board.src=result_list.ESFJ.board_img
@@ -537,14 +537,14 @@ function getMBTI(){
                     nick.textContent=result_list.ESFJ.nickname
                     character.src=result_list.ESFJ.character_img
                     travel_style.textContent=result_list.ESFJ.character
-                    location.textContent=result_list.ESFJ.location
+                    loca.textContent=result_list.ESFJ.location
                     landscape.src=result_list.ESFJ.loca_img
                     loca_one.textContent=result_list.ESFJ.contents[0]
                     loca_two.textContent=result_list.ESFJ.contents[1]
                     partner_name.textContent=result_list.ESFJ.partner
                     partner_img.src=result_list.ESFJ.partner_img
                     partner_info.textContent=result_list.ESFJ.contents[2]
-                    alert("ESFJ")
+                    //alert("ESFJ")
                 }
             }
             else{
@@ -555,14 +555,14 @@ function getMBTI(){
                     nick.textContent=result_list.ESTP.nickname
                     character.src=result_list.ESTP.character_img
                     travel_style.textContent=result_list.ESTP.character
-                    location.textContent=result_list.ESTP.location
+                    loca.textContent=result_list.ESTP.location
                     landscape.src=result_list.ESTP.loca_img
                     loca_one.textContent=result_list.ESTP.contents[0]
                     loca_two.textContent=result_list.ESTP.contents[1]
                     partner_name.textContent=result_list.ESTP.partner
                     partner_img.src=result_list.ESTP.partner_img
                     partner_info.textContent=result_list.ESTP.contents[2]
-                    alert("ESTP")
+                    //alert("ESTP")
                 }
                 else{
                     board.src=result_list.ESTJ.board_img
@@ -570,14 +570,14 @@ function getMBTI(){
                     nick.textContent=result_list.ESTJ.nickname
                     character.src=result_list.ESTJ.character_img
                     travel_style.textContent=result_list.ESTJ.character
-                    location.textContent=result_list.ESTJ.location
+                    loca.textContent=result_list.ESTJ.location
                     landscape.src=result_list.ESTJ.loca_img
                     loca_one.textContent=result_list.ESTJ.contents[0]
                     loca_two.textContent=result_list.ESTJ.contents[1]
                     partner_name.textContent=result_list.ESTJ.partner
                     partner_img.src=result_list.ESTJ.partner_img
                     partner_info.textContent=result_list.ESTJ.contents[2]
-                    alert("ESTJ")
+                    //alert("ESTJ")
                 }
             }
         }
@@ -591,14 +591,14 @@ function getMBTI(){
                     nick.textContent=result_list.ENFP.nickname
                     character.src=result_list.ENFP.character_img
                     travel_style.textContent=result_list.ENFP.character
-                    location.textContent=result_list.ENFP.location
+                    loca.textContent=result_list.ENFP.location
                     landscape.src=result_list.ENFP.loca_img
                     loca_one.textContent=result_list.ENFP.contents[0]
                     loca_two.textContent=result_list.ENFP.contents[1]
                     partner_name.textContent=result_list.ENFP.partner
                     partner_img.src=result_list.ENFP.partner_img
                     partner_info.textContent=result_list.ENFP.contents[2]
-                    alert("ENFP")
+                    //alert("ENFP")
                 }
                 else{
                     board.src=result_list.ENFJ.board_img
@@ -606,14 +606,14 @@ function getMBTI(){
                     nick.textContent=result_list.ENFJ.nickname
                     character.src=result_list.ENFJ.character_img
                     travel_style.textContent=result_list.ENFJ.character
-                    location.textContent=result_list.ENFJ.location
+                    loca.textContent=result_list.ENFJ.location
                     landscape.src=result_list.ENFJ.loca_img
                     loca_one.textContent=result_list.ENFJ.contents[0]
                     loca_two.textContent=result_list.ENFJ.contents[1]
                     partner_name.textContent=result_list.ENFJ.partner
                     partner_img.src=result_list.ENFJ.partner_img
                     partner_info.textContent=result_list.ENFJ.contents[2]
-                    alert("ENFJ")
+                    //alert("ENFJ")
                 }
             }
             else{
@@ -624,14 +624,14 @@ function getMBTI(){
                     nick.textContent=result_list.ENTP.nickname
                     character.src=result_list.ENTP.character_img
                     travel_style.textContent=result_list.ENTP.character
-                    location.textContent=result_list.ENTP.location
+                    loca.textContent=result_list.ENTP.location
                     landscape.src=result_list.ENTP.loca_img
                     loca_one.textContent=result_list.ENTP.contents[0]
                     loca_two.textContent=result_list.ENTP.contents[1]
                     partner_name.textContent=result_list.ENTP.partner
                     partner_img.src=result_list.ENTP.partner_img
                     partner_info.textContent=result_list.ENTP.contents[2]
-                    alert("ENTP")
+                    //alert("ENTP")
                 }
                 else{
                     board.src=result_list.ENTJ.board_img
@@ -639,14 +639,14 @@ function getMBTI(){
                     nick.textContent=result_list.ENTJ.nickname
                     character.src=result_list.ENTJ.character_img
                     travel_style.textContent=result_list.ENTJ.character
-                    location.textContent=result_list.ENTJ.location
+                    loca.textContent=result_list.ENTJ.location
                     landscape.src=result_list.ENTJ.loca_img
                     loca_one.textContent=result_list.ENTJ.contents[0]
                     loca_two.textContent=result_list.ENTJ.contents[1]
                     partner_name.textContent=result_list.ENTJ.partner
                     partner_img.src=result_list.ENTJ.partner_img
                     partner_info.textContent=result_list.ENTJ.contents[2]
-                    alert("ENTJ")
+                    //alert("ENTJ")
                 }
             }
         }
