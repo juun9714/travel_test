@@ -2,13 +2,14 @@
     src:url("./font/neodgm_pro.ttf");
     font-family:"neo";
 }
-
+input{
+    font-family:"neo";
+}
 html{
     font-family:"neo";
     background:linear-gradient(109deg,#b5d692, 50%,#a8d2a8)
 }
 #title{
-    
     text-align: left;
     padding-top:50px;
     padding-left: 10%;
@@ -62,7 +63,7 @@ html{
     margin-top: 20px;
     width:20%;
     height: 24px;
-    font-size:10px;
+    font-size:15px;
     font-weight: 600;
     border-style: none;
 }
