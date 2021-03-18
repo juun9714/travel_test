@@ -38,26 +38,33 @@ html{
 
 #start{
     padding-top:40px;
-    width:45%;
+    width:70%;
     display:block;
     margin:0 auto;
 }
 #our_link{
-    position: relative;
-    width:55%;
+    display: inline;
+    text-align: center;
+    font-family:"neo";
+    margin-top: 20px;
+    width:70%;
+    padding:0;
     height:24px;
     border-style: none;
     background-color: lightgray;
     border-radius: 5px;
 }
 #copy_link{
-    position: relative;
-    margin-top: 20px;
-    width:20%;
-    height: 24px;
+    display: inline;
+    margin-top: 5px;
+    border-radius: 5px;
+    width:70%;
+    padding:0;
+    height: 30px;
     font-size:15px;
-    font-weight: 600;
+    font-weight: 300;
     border-style: none;
+    font-family:"neo";
 }
 
 button{
