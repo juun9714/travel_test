@@ -111,7 +111,7 @@ const result_list={
         //현식
         board_img:"./img/result/10lion_ENTP/resultPage_board10_ENTP.png",
         summary:"당신은 바티칸 시티를 여행하고 있는 매 순간 최선의 결정을 내리는 사자입니다.",
-        nickname:"최고의 변호인 사자",
+        nickname:"매 순간 최선의 결정을 내리는 사자",
         character_img:"./img/result/10lion_ENTP/resultPage_character10_ENTP.png",
         character:"당신은 다른 사람들의 의견보다는 자신만의 확고한 가치관이 있으시군요!  그렇지만 선입견을 가지고 판단하지 않고 새로운 지식들을 있는 그대로 받아들이는 개방적인 성격이시네요. 본인이 납득할 수 있는 근거들과 논리적으로 타당한 것들에 흥미를 느끼는 사람입니다. 다른 사람들이 놓치기 쉬운 부분들을 캐치하여 관찰하는 뛰어난 통찰력의 소유자입니다. 곳곳에 숨어있는 디테일들을 찾을 수 있는 여행지는 어떠신가요?",
         location:"바티칸 시티",
