@@ -81,3 +81,17 @@ button{
         width:90%;
     }
 }
+
+#copyright_one, #copyright_two,#copyright_three{
+    bottom:10%;
+    width:100%;
+    left:25%;
+    color: #fff;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+footer{
+    padding-top:80px;
+}

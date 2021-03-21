@@ -17,6 +17,7 @@ html{
 
 #result_content{
     margin: 100px auto;
+    margin-bottom: 0;
     width:90%;
 }
 
@@ -127,6 +128,7 @@ html{
     font-size:25px;
     font-weight: bolder;
     margin-bottom: 0;
+    word-break:keep-all;
 }
 
 .small_dash{
@@ -136,6 +138,7 @@ html{
 #nick, #loca, #partner_name{
     margin-top:0;
     font-weight:lighter;
+    word-break:keep-all;
 }
 
 #title{
@@ -146,4 +149,19 @@ html{
 
 #loca_one, #loca_two, #travel_style_one, #travel_style_two, #summary,#partner_info{
     font-weight:lighter;
+}
+
+
+#copyright_one, #copyright_two,#copyright_three{
+    bottom:10%;
+    width:100%;
+    left:25%;
+    color: #fff;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+footer{
+    padding-top:80px;
 }
