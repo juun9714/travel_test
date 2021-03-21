@@ -8,6 +8,7 @@ html{
         word-break: keep-all;
         word-spacing: 3px;
         line-height: 1.3;
+        font-weight:lighter;
         font-stretch:ultra-condensed;
 }
 #content{
@@ -136,9 +137,14 @@ html{
 
 #nick, #loca, #partner_name{
     margin-top:0;
+    font-weight:lighter;
 }
 
 #title{
     font-size:28px;
     text-align: left;
+}
+
+#loca_one, #loca_two, #travel_style_one, #travel_style_two, #summary,#partner_info{
+    font-weight:lighter;
 }
