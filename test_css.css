@@ -33,6 +33,7 @@ html{
     padding-bottom: 40px;
     word-break: keep-all;
     width:100%;
+    font-weight: lighter;
 }
 #one{
     width:100%;
