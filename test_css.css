@@ -141,6 +141,7 @@ html{
 #title{
     font-size:28px;
     text-align: center;
+    word-break:keep-all;
 }
 
 #loca_one, #loca_two, #travel_style_one, #travel_style_two, #summary,#partner_info{
