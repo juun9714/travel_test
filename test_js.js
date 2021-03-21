@@ -356,7 +356,10 @@ const result_list={
         summary:"당신은 그리스를 여행하고 있는 안경 쓴 부엉이 박사입니다.",
         nickname:"안경 쓴 부엉이 박사",
         character_img:"./img/result/4owl_ESTJ/resultPage_character4_ESTJ.png",
-        character:"당신은 계획적인 여행을 좋아하는 군요. 특히, 똑부러지게 짜놓은 계획을 어기는 것을 참을 수가 없어요. 시간 약속을 했는데 지키지 않는 동행자가 있으면 돌아버려요. 그렇다면 동행자들이 시간에 맞춰 움직이는 패키지 여행은 어떨까요? 당신이 원하는 유적지 코스와 계획적인 여행을 모두 얻을 수 있을 거에요 !",
+        character:[
+            "당신은 계획적인 여행을 좋아하는 군요. 특히, 똑부러지게 짜놓은 계획을 어기는 것을 참을 수가 없어요. 시간 약속을 했는데 지키지 않는 동행자가 있으면 돌아버려요.", 
+            "그렇다면 동행자들이 시간에 맞춰 움직이는 패키지 여행은 어떨까요? 당신이 원하는 유적지 코스와 계획적인 여행을 모두 얻을 수 있을 거에요 !"
+        ],
         location:"그리스",
         loca_img:"./img/result/4owl_ESTJ/resultPage_landscape4_ESTJ.png",
         contents:[
@@ -373,7 +376,10 @@ const result_list={
         summary:"당신은 싱가포르를 여행하고 있는 독야청청 독수리 선생님입니다.",
         nickname:"독야청청 독수리 선생님",
         character_img:"./img/result/5eagle_ISTJ/resultPage_character5_ISTJ.png",
-        character:"당신은 다른 사람들이랑 일하는 것을 어려워해요. 만약 내 팀원이 답답하게 일하면 조용히 뒷목 잡으면서 차라리 그 사람 몫까지 내가 다 해버리고 싶어져요. 그런데 또 계획적인 성격이라 여행 계획을 짜는 것부터 피곤하네요. 시간이 부족한데 결정 내리지 못하고 질질끄는 상황을 못견디겠어요. 당신의 의견을 잘 들어주고, 따라주는 유한 사람과 함께 하면 좋은 여행을 즐길 수 있을 거에요 !",
+        character:[
+            "당신은 다른 사람들이랑 일하는 것을 어려워해요. 만약 내 팀원이 답답하게 일하면 조용히 뒷목 잡으면서 차라리 그 사람 몫까지 내가 다 해버리고 싶어져요.",
+            "그런데 또 계획적인 성격이라 여행 계획을 짜는 것부터 피곤하네요. 시간이 부족한데 결정 내리지 못하고 질질끄는 상황을 못견디겠어요. 당신의 의견을 잘 들어주고, 따라주는 유한 사람과 함께 하면 좋은 여행을 즐길 수 있을 거에요 !"
+        ],
         location:"싱가포르",
         loca_img:"./img/result/5eagle_ISTJ/resultPage_landscape5_ISTJ.png",
         contents:[
@@ -390,7 +396,10 @@ const result_list={
         summary:"당신은 코타키나발루를 여행하고 있는 발빠른 다람쥐입니다.",
         nickname:"발빠른 다람쥐",
         character_img:"./img/result/6squirrel_ESFJ/resultPage_character6_ESFJ.png",
-        character:"당신은 친구들 사이에서 인기쟁군요! 분위기를 좌지우지하면서 사람들이 자신에게 집중하도록 하는 데에 재능이 있어요. 여러 명이 함께하는 여행에서 인싸로 등극해서 첫째날에 번호교환까지 모두 완료할 당신! 자칫하면 어색하기만 하다가 끝날 수 있는 패키지 여행 또는 게스트 하우스 모두 즐거운 여행으로 만들 수 있겠네요. 여러 사람들과 함께 하는 여행은 서로에 대한 배려와 도움의 손길이 가장 중요해요. 다른 사람들을 진지한 마음으로 돕는 당신은 이런 여행에 찰떡이네요 !",
+        character:[
+            "당신은 친구들 사이에서 인기쟁군요! 분위기를 좌지우지하면서 사람들이 자신에게 집중하도록 하는 데에 재능이 있어요. 여러 명이 함께하는 여행에서 인싸로 등극해서 첫째날에 번호교환까지 모두 완료할 당신! 자칫하면 어색하기만 하다가 끝날 수 있는 패키지 여행 또는 게스트 하우스 모두 즐거운 여행으로 만들 수 있겠네요.",
+            "여러 사람들과 함께 하는 여행은 서로에 대한 배려와 도움의 손길이 가장 중요해요. 다른 사람들을 진지한 마음으로 돕는 당신은 이런 여행에 찰떡이네요 !"
+        ],
         location:"코타키나발루",
         loca_img:"./img/result/6squirrel_ESFJ/resultPage_landscape6_ESFJ.png",
         contents:[
@@ -419,7 +428,8 @@ function getMBTI(){
                     summary.textContent=result_list.ISFP.summary
                     nick.textContent=result_list.ISFP.nickname
                     character.src=result_list.ISFP.character_img
-                    travel_style.textContent=result_list.ISFP.character
+                    travel_style_one.textContent=result_list.ISFP.character[0]
+                    travel_style_two.textContent=result_list.ISFP.character[1]
                     loca.textContent=result_list.ISFP.location
                     landscape.src=result_list.ISFP.loca_img
                     loca_one.textContent=result_list.ISFP.contents[0]
@@ -433,7 +443,8 @@ function getMBTI(){
                     summary.textContent=result_list.ISFJ.summary
                     nick.textContent=result_list.ISFJ.nickname
                     character.src=result_list.ISFJ.character_img
-                    travel_style.textContent=result_list.ISFJ.character
+                    travel_style_one.textContent=result_list.ISFJ.character[0]
+                    travel_style_two.textContent=result_list.ISFJ.character[1]
                     loca.textContent=result_list.ISFJ.location
                     landscape.src=result_list.ISFJ.loca_img
                     loca_one.textContent=result_list.ISFJ.contents[0]
@@ -450,7 +461,8 @@ function getMBTI(){
                     summary.textContent=result_list.ISTP.summary
                     nick.textContent=result_list.ISTP.nickname
                     character.src=result_list.ISTP.character_img
-                    travel_style.textContent=result_list.ISTP.character
+                    travel_style_one.textContent=result_list.ISTP.character[0]
+                    travel_style_two.textContent=result_list.ISTP.character[1]
                     loca.textContent=result_list.ISTP.location
                     landscape.src=result_list.ISTP.loca_img
                     loca_one.textContent=result_list.ISTP.contents[0]
@@ -464,7 +476,8 @@ function getMBTI(){
                     summary.textContent=result_list.ISTJ.summary
                     nick.textContent=result_list.ISTJ.nickname
                     character.src=result_list.ISTJ.character_img
-                    travel_style.textContent=result_list.ISTJ.character
+                    travel_style_one.textContent=result_list.ISTJ.character[0]
+                    travel_style_two.textContent=result_list.ISTJ.character[1]
                     loca.textContent=result_list.ISTJ.location
                     landscape.src=result_list.ISTJ.loca_img
                     loca_one.textContent=result_list.ISTJ.contents[0]
@@ -484,7 +497,8 @@ function getMBTI(){
                     summary.textContent=result_list.INFP.summary
                     nick.textContent=result_list.INFP.nickname
                     character.src=result_list.INFP.character_img
-                    travel_style.textContent=result_list.INFP.character
+                    travel_style_one.textContent=result_list.INFP.character[0]
+                    travel_style_two.textContent=result_list.INFP.character[1]
                     loca.textContent=result_list.INFP.location
                     landscape.src=result_list.INFP.loca_img
                     loca_one.textContent=result_list.INFP.contents[0]
@@ -498,7 +512,8 @@ function getMBTI(){
                     summary.textContent=result_list.INFJ.summary
                     nick.textContent=result_list.INFJ.nickname
                     character.src=result_list.INFJ.character_img
-                    travel_style.textContent=result_list.INFJ.character
+                    travel_style_one.textContent=result_list.INFJ.character[0]
+                    travel_style_two.textContent=result_list.INFJ.character[1]
                     loca.textContent=result_list.INFJ.location
                     landscape.src=result_list.INFJ.loca_img
                     loca_one.textContent=result_list.INFJ.contents[0]
@@ -515,7 +530,8 @@ function getMBTI(){
                     summary.textContent=result_list.INTP.summary
                     nick.textContent=result_list.INTP.nickname
                     character.src=result_list.INTP.character_img
-                    travel_style.textContent=result_list.INTP.character
+                    travel_style_one.textContent=result_list.INTP.character[0]
+                    travel_style_two.textContent=result_list.INTP.character[1]
                     loca.textContent=result_list.INTP.location
                     landscape.src=result_list.INTP.loca_img
                     loca_one.textContent=result_list.INTP.contents[0]
@@ -529,7 +545,8 @@ function getMBTI(){
                     summary.textContent=result_list.INTJ.summary
                     nick.textContent=result_list.INTJ.nickname
                     character.src=result_list.INTJ.character_img
-                    travel_style.textContent=result_list.INTJ.character
+                    travel_style_one.textContent=result_list.INTJ.character[0]
+                    travel_style_two.textContent=result_list.INTJ.character[1]
                     loca.textContent=result_list.INTJ.location
                     landscape.src=result_list.INTJ.loca_img
                     loca_one.textContent=result_list.INTJ.contents[0]
@@ -552,7 +569,8 @@ function getMBTI(){
                     summary.textContent=result_list.ESFP.summary
                     nick.textContent=result_list.ESFP.nickname
                     character.src=result_list.ESFP.character_img
-                    travel_style.textContent=result_list.ESFP.character
+                    travel_style_one.textContent=result_list.ESFP.character[0]
+                    travel_style_two.textContent=result_list.ESFP.character[1]
                     loca.textContent=result_list.ESFP.location
                     landscape.src=result_list.ESFP.loca_img
                     loca_one.textContent=result_list.ESFP.contents[0]
@@ -566,7 +584,8 @@ function getMBTI(){
                     summary.textContent=result_list.ESFJ.summary
                     nick.textContent=result_list.ESFJ.nickname
                     character.src=result_list.ESFJ.character_img
-                    travel_style.textContent=result_list.ESFJ.character
+                    travel_style_one.textContent=result_list.ESFJ.character[0]
+                    travel_style_two.textContent=result_list.ESFJ.character[1]
                     loca.textContent=result_list.ESFJ.location
                     landscape.src=result_list.ESFJ.loca_img
                     loca_one.textContent=result_list.ESFJ.contents[0]
@@ -583,7 +602,8 @@ function getMBTI(){
                     summary.textContent=result_list.ESTP.summary
                     nick.textContent=result_list.ESTP.nickname
                     character.src=result_list.ESTP.character_img
-                    travel_style.textContent=result_list.ESTP.character
+                    travel_style_one.textContent=result_list.ESTP.character[0]
+                    travel_style_two.textContent=result_list.ESTP.character[1]
                     loca.textContent=result_list.ESTP.location
                     landscape.src=result_list.ESTP.loca_img
                     loca_one.textContent=result_list.ESTP.contents[0]
@@ -597,7 +617,8 @@ function getMBTI(){
                     summary.textContent=result_list.ESTJ.summary
                     nick.textContent=result_list.ESTJ.nickname
                     character.src=result_list.ESTJ.character_img
-                    travel_style.textContent=result_list.ESTJ.character
+                    travel_style_one.textContent=result_list.ESTJ.character[0]
+                    travel_style_two.textContent=result_list.ESTJ.character[1]
                     loca.textContent=result_list.ESTJ.location
                     landscape.src=result_list.ESTJ.loca_img
                     loca_one.textContent=result_list.ESTJ.contents[0]
@@ -617,7 +638,8 @@ function getMBTI(){
                     summary.textContent=result_list.ENFP.summary
                     nick.textContent=result_list.ENFP.nickname
                     character.src=result_list.ENFP.character_img
-                    travel_style.textContent=result_list.ENFP.character
+                    travel_style_one.textContent=result_list.ENFP.character[0]
+                    travel_style_two.textContent=result_list.ENFP.character[1]
                     loca.textContent=result_list.ENFP.location
                     landscape.src=result_list.ENFP.loca_img
                     loca_one.textContent=result_list.ENFP.contents[0]
@@ -631,7 +653,8 @@ function getMBTI(){
                     summary.textContent=result_list.ENFJ.summary
                     nick.textContent=result_list.ENFJ.nickname
                     character.src=result_list.ENFJ.character_img
-                    travel_style.textContent=result_list.ENFJ.character
+                    travel_style_one.textContent=result_list.ENFJ.character[0]
+                    travel_style_two.textContent=result_list.ENFJ.character[1]
                     loca.textContent=result_list.ENFJ.location
                     landscape.src=result_list.ENFJ.loca_img
                     loca_one.textContent=result_list.ENFJ.contents[0]
@@ -648,7 +671,8 @@ function getMBTI(){
                     summary.textContent=result_list.ENTP.summary
                     nick.textContent=result_list.ENTP.nickname
                     character.src=result_list.ENTP.character_img
-                    travel_style.textContent=result_list.ENTP.character
+                    travel_style_one.textContent=result_list.ENTP.character[0]
+                    travel_style_two.textContent=result_list.ENTP.character[1]
                     loca.textContent=result_list.ENTP.location
                     landscape.src=result_list.ENTP.loca_img
                     loca_one.textContent=result_list.ENTP.contents[0]
@@ -662,7 +686,8 @@ function getMBTI(){
                     summary.textContent=result_list.ENTJ.summary
                     nick.textContent=result_list.ENTJ.nickname
                     character.src=result_list.ENTJ.character_img
-                    travel_style.textContent=result_list.ENTJ.character
+                    travel_style_one.textContent=result_list.ENTJ.character[0]
+                    travel_style_two.textContent=result_list.ENTJ.character[1]
                     loca.textContent=result_list.ENTJ.location
                     landscape.src=result_list.ENTJ.loca_img
                     loca_one.textContent=result_list.ENTJ.contents[0]
