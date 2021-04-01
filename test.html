@@ -15,6 +15,14 @@
             alert("링크가 복사되었어요 ! 우리 얼른 공유하러 가요 :)");
         }
 
+        function copy2(){
+            var copyText = document.getElementById("our_link2");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            document.execCommand("copy");
+            alert("와아 얼른 치킨 먹으러 가요 ! :)");
+        }
+
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Noto+Serif+KR&display=swap');
@@ -65,8 +73,8 @@
             <input type="text" id="our_link" value="https://juun9714.github.io/travel_test/main.html" readonly>
             <button id="copy_link" onclick="copy()">링크 복사하기</button>
 
-            <input type="text" id="our_link" value="https://forms.gle/LmZevfKL6ELxrxJg7" readonly>
-            <button id="copy_link" onclick="copy()">위 링크 복사해서 치킨 기프티콘 추첨 참여하기 !</button>
+            <input type="text" id="our_link2" value="https://forms.gle/LmZevfKL6ELxrxJg7" readonly>
+            <button id="copy_link2" onclick="copy2()">위 링크로 가서 치킨 먹기 !</button>
         </div>
 
         <footer>

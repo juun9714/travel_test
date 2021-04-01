@@ -61,7 +61,7 @@ html{
     }
 }
 
-#our_link{
+#our_link, #our_link2{
     text-align: center;
     font-family:"neo";
     margin-top: 20px;
@@ -72,7 +72,8 @@ html{
     border-radius: 5px;
     padding:0;
 }
-#copy_link{
+
+#copy_link, #copy_link2{
     margin-top: 5px;
     border-radius: 5px;
     padding:0;
